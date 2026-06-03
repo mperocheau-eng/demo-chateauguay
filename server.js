@@ -18,6 +18,10 @@ const REGLEMENTATION = {
     }
 };
 
+// Route d'accueil pour tester dans le navigateur
+app.get('/', (req, res) => {
+    res.send("Le serveur d'API de la Ville de Châteauguay est en ligne et fonctionnel ! 🚀");
+});
 // Point d'entrée de notre API de préqualification
 app.post('/api/prequalify', (req, res) => {
     // Avaya Infinity nous enverra ces données
